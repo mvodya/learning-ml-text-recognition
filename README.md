@@ -97,10 +97,16 @@ pip install tensorflow==2.10.0
 
 ```powershell
 # Для устройств с Nvidia GPU
-.\scripts\start-cuda.ps1
+docker run -it -p 8888:8888 --rm --gpus all `
+-v "${PWD}":/home/jovyan/work `
+quay.io/jupyter/tensorflow-notebook:cuda-2024-10-23 `
+start-notebook.py --ip='*' --NotebookApp.token='' --NotebookApp.password=''
 
 # Для запуска на процессоре
-.\scripts\cuda.ps1
+docker run -it -p 8888:8888 --rm `
+-v "${PWD}":/home/jovyan/work `
+quay.io/jupyter/tensorflow-notebook:2024-10-23 `
+start-notebook.py --ip='*' --NotebookApp.token='' --NotebookApp.password=''
 ```
 
 Запустите для Linux/MacOS:
@@ -108,10 +114,16 @@ pip install tensorflow==2.10.0
 ```powershell
 # Для устройств с Nvidia GPU (только на Linux)
 # см. официальный сайт tensorflow для включения поддержки Metal на MacOS
-./scripts/start-cuda.sh
+docker run -it -p 8888:8888 --rm --gpus all \
+-v "${PWD}":/home/jovyan/work \
+quay.io/jupyter/tensorflow-notebook:cuda-2024-10-23 \
+start-notebook.py --ip='*' --NotebookApp.token='' --NotebookApp.password=''
 
 # Для запуска на процессоре
-./scripts/cuda.sh
+docker run -it -p 8888:8888 --rm \
+-v "${PWD}":/home/jovyan/work \
+quay.io/jupyter/tensorflow-notebook:2024-10-23 \
+start-notebook.py --ip='*' --NotebookApp.token='' --NotebookApp.password=''
 ```
 
 После этого вы можете открыть ссылку в терминале либо перейти http://127.0.0.1:8888/
