@@ -51,7 +51,7 @@
 
 Загрузите код из репозитория. Можно загрузить код [по этой ссылке](https://github.com/mvodya/learning-ml-text-recognition/archive/refs/heads/main.zip).
 
-Как альтернативный вариант, вы можете использовать [Git](https://git-scm.com/downloads/win) для загрузки кода, используя следующую командуЖ
+Как альтернативный вариант, вы можете использовать [Git](https://git-scm.com/downloads/win) для загрузки кода, используя следующую команду:
 
 ```bash
 git clone https://github.com/mvodya/learning-ml-text-recognition.git
