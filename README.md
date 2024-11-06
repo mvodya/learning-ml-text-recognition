@@ -49,12 +49,12 @@
 
 Для подготовки локального окружения и запуска окружения потребуется производительный компьютер (с мощным графическим ускорителем). Тем не менее обучение нейронной возможно и на слабом ПК - но это займет заметно больше времени.
 
-Загрузите код из репозитория. Можно загрузить код [по этой ссылке](https://github.com/mvodya/learning-ml-text-recognition/archive/refs/heads/main.zip).
+Загрузите код из репозитория. Можно загрузить код [по этой ссылке](https://git.frogling.com/mvodya/learning-ml-text-recognition/-/archive/main/learning-ml-text-recognition-main.zip).
 
 Как альтернативный вариант, вы можете использовать [Git](https://git-scm.com/downloads/win) для загрузки кода, используя следующую команду:
 
 ```bash
-git clone https://github.com/mvodya/learning-ml-text-recognition.git
+git clone https://git.frogling.com/mvodya/learning-ml-text-recognition.git
 ```
 
 Репозиторий будет клонирован в папку `learning-ml-text-recognition`.
