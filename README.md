@@ -34,11 +34,11 @@
 
 Для работы потребуется датасет - загрузите данный репозиторий, включая папку [dataset](dataset) и файл [text-hand.png](text-hand.png).
 
-Откройте раздел файлы (слева) и загрузите необходимые файлы:
+Откройте раздел "файлы" (меню слева) и загрузите необходимые файлы:
 
 * [text-hand.png](text-hand.png) - пример рукописного текста для распознания
 * [dataset/emnist-byclass-mapping.txt](dataset/emnist-byclass-mapping.txt) - файл для сопоставления изображений и меток
-* [dataset/emnist-byclass-test-images-idx3-ubyte.gz](dataset/emnist-byclass-test-images-idx3-ubyte.gz) [dataset/emnist-byclass-test-labels-idx1-ubyte.gz](dataset/emnist-byclass-test-labels-idx1-ubyte.gz) - датасет для тесов
+* [dataset/emnist-byclass-test-images-idx3-ubyte.gz](dataset/emnist-byclass-test-images-idx3-ubyte.gz) [dataset/emnist-byclass-test-labels-idx1-ubyte.gz](dataset/emnist-byclass-test-labels-idx1-ubyte.gz) - датасет для тестов
 * [dataset/emnist-byclass-train-images-idx3-ubyte.gz](dataset/emnist-byclass-train-images-idx3-ubyte.gz) [dataset/emnist-byclass-train-labels-idx1-ubyte.gz](dataset/emnist-byclass-train-labels-idx1-ubyte.gz) - датасет для обучения
 
 Файлы можно загрузить следующим образом:
