@@ -88,3 +88,30 @@ pip install tensorflow==2.10.0
 ```
 
 Окружение готово к работе! Открывайте папку в vscode работайте с файлом `lesson.ipynb`.
+
+### Работа локально с использованием Docker
+
+Установите [Docker Desktop](https://www.docker.com/products/docker-desktop/).
+
+Запустите для Windows:
+
+```powershell
+# Для устройств с Nvidia GPU
+.\scripts\start-cuda.ps1
+
+# Для запуска на процессоре
+.\scripts\cuda.ps1
+```
+
+Запустите для Linux/MacOS:
+
+```powershell
+# Для устройств с Nvidia GPU (только на Linux)
+# см. официальный сайт tensorflow для включения поддержки Metal на MacOS
+./scripts/start-cuda.sh
+
+# Для запуска на процессоре
+./scripts/cuda.sh
+```
+
+После этого вы можете открыть ссылку в терминале либо перейти http://127.0.0.1:8888/
