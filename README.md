@@ -32,26 +32,22 @@
 * Загрузите файл [lesson.ipynb](lesson.ipynb) в Google Colab
 * Или нажмите на кнопку Open In Colab (расположена чуть выше)
 
-Для работы потребуется датасет - загрузите данный репозиторий, включая папку [dataset](dataset) и файл [text-hand.png](text-hand.png).
-
-Откройте раздел "файлы" (меню слева) и загрузите необходимые файлы:
+Каждый раз после создания новой сессии, на Colab будут отсутствовать необходимые файлы. Для Colab в коде предусмотрена автоматическая загрузка и распаковка датасета [с сайта](https://git.frogling.com/mvodya/learning-ml-text-recognition/-/archive/main/learning-ml-text-recognition-main.tar.gz?path=dataset). После распаковки проверьте наличие всех необходимых файлов:
 
 * [text-hand.png](text-hand.png) - пример рукописного текста для распознания
 * [dataset/emnist-byclass-mapping.txt](dataset/emnist-byclass-mapping.txt) - файл для сопоставления изображений и меток
-* [dataset/emnist-byclass-test-images-idx3-ubyte.gz](dataset/emnist-byclass-test-images-idx3-ubyte.gz) [dataset/emnist-byclass-test-labels-idx1-ubyte.gz](dataset/emnist-byclass-test-labels-idx1-ubyte.gz) - датасет для тестов
-* [dataset/emnist-byclass-train-images-idx3-ubyte.gz](dataset/emnist-byclass-train-images-idx3-ubyte.gz) [dataset/emnist-byclass-train-labels-idx1-ubyte.gz](dataset/emnist-byclass-train-labels-idx1-ubyte.gz) - датасет для обучения
-
-Файлы можно загрузить следующим образом:
-
-![how-to-colab-upload-files](how-to-colab-upload-files.jpg)
+* [dataset/emnist-byclass-test-images-idx3-ubyte.gz](dataset/emnist-byclass-test-images-idx3-ubyte.gz) + [dataset/emnist-byclass-test-labels-idx1-ubyte.gz](dataset/emnist-byclass-test-labels-idx1-ubyte.gz) - датасет для тестов
+* [dataset/emnist-byclass-train-images-idx3-ubyte.gz](dataset/emnist-byclass-train-images-idx3-ubyte.gz) + [dataset/emnist-byclass-train-labels-idx1-ubyte.gz](dataset/emnist-byclass-train-labels-idx1-ubyte.gz) - датасет для обучения
 
 ### Работа локально
 
 Для подготовки локального окружения и запуска окружения потребуется производительный компьютер (с мощным графическим ускорителем). Тем не менее обучение нейронной возможно и на слабом ПК - но это займет заметно больше времени.
 
+[Как открыть командную строку?](how_to_open_ps.md)
+
 Загрузите код из репозитория. Можно загрузить код [по этой ссылке](https://git.frogling.com/mvodya/learning-ml-text-recognition/-/archive/main/learning-ml-text-recognition-main.zip).
 
-Как альтернативный вариант, вы можете использовать [Git](https://git-scm.com/downloads/win) для загрузки кода, используя следующую команду:
+Помимо ручной загрузки кода, вы можете использовать [Git](https://git-scm.com/downloads/win) для загрузки кода, используя следующую команду:
 
 ```bash
 git clone https://git.frogling.com/mvodya/learning-ml-text-recognition.git
